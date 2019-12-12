@@ -7,23 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF38C7E023A23DBD00C1DD76 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38C7DF23A23DBD00C1DD76 /* UserResponse.swift */; };
+		CF83D69D23A164A9000092DB /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF83D69C23A164A9000092DB /* WebImageView.swift */; };
 		CF96516D23A11D9A00A6B97B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96516C23A11D9A00A6B97B /* AppDelegate.swift */; };
-		CF96516F23A11D9A00A6B97B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96516E23A11D9A00A6B97B /* SceneDelegate.swift */; };
-		CF96517123A11D9A00A6B97B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96517023A11D9A00A6B97B /* ViewController.swift */; };
-		CF96517423A11D9A00A6B97B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF96517223A11D9A00A6B97B /* Main.storyboard */; };
 		CF96517623A11D9E00A6B97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF96517523A11D9E00A6B97B /* Assets.xcassets */; };
 		CF96517923A11D9E00A6B97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF96517723A11D9E00A6B97B /* LaunchScreen.storyboard */; };
+		CF96518223A11F4A00A6B97B /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF96518123A11F4A00A6B97B /* VKSdkFramework.framework */; };
+		CF96518323A11F4A00A6B97B /* VKSdkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF96518123A11F4A00A6B97B /* VKSdkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF96518723A120C400A6B97B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96518623A120C400A6B97B /* AuthService.swift */; };
+		CF96518A23A1227200A6B97B /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96518923A1227200A6B97B /* UIViewController + Storyboard.swift */; };
+		CF96518D23A1230400A6B97B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96518C23A1230400A6B97B /* AuthViewController.swift */; };
+		CF96518F23A1235100A6B97B /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF96518E23A1235100A6B97B /* AuthViewController.storyboard */; };
+		CF96519823A1241E00A6B97B /* FriendsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96519123A1241E00A6B97B /* FriendsListPresenter.swift */; };
+		CF96519923A1241E00A6B97B /* FriendsListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96519223A1241E00A6B97B /* FriendsListWorker.swift */; };
+		CF96519A23A1241E00A6B97B /* FriendsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96519323A1241E00A6B97B /* FriendsListRouter.swift */; };
+		CF96519B23A1241E00A6B97B /* FriendsListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96519423A1241E00A6B97B /* FriendsListModels.swift */; };
+		CF96519C23A1241E00A6B97B /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96519523A1241E00A6B97B /* FriendsListViewController.swift */; };
+		CF96519D23A1241E00A6B97B /* FriendsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96519623A1241E00A6B97B /* FriendsListInteractor.swift */; };
+		CF9651A023A1243F00A6B97B /* FriendsListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF96519F23A1243F00A6B97B /* FriendsListViewController.storyboard */; };
+		CF9651A323A1277900A6B97B /* FriendsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9651A223A1277900A6B97B /* FriendsListTableViewCell.swift */; };
+		CF9651A823A12D7B00A6B97B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9651A723A12D7B00A6B97B /* API.swift */; };
+		CF9651AA23A12E3B00A6B97B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9651A923A12E3B00A6B97B /* NetworkService.swift */; };
+		CF9651AD23A1308800A6B97B /* FriendsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9651AC23A1308800A6B97B /* FriendsResponse.swift */; };
+		CF9651AF23A131A100A6B97B /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9651AE23A131A100A6B97B /* NetworkDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CF96518423A11F4A00A6B97B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF96518323A11F4A00A6B97B /* VKSdkFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CF38C7DF23A23DBD00C1DD76 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		CF83D69C23A164A9000092DB /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		CF96516923A11D9A00A6B97B /* FriendsListVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsListVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF96516C23A11D9A00A6B97B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF96516E23A11D9A00A6B97B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF96517023A11D9A00A6B97B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF96517323A11D9A00A6B97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF96517523A11D9E00A6B97B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF96517823A11D9E00A6B97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF96517A23A11D9E00A6B97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF96518123A11F4A00A6B97B /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
+		CF96518623A120C400A6B97B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CF96518923A1227200A6B97B /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
+		CF96518C23A1230400A6B97B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		CF96518E23A1235100A6B97B /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		CF96519123A1241E00A6B97B /* FriendsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListPresenter.swift; sourceTree = "<group>"; };
+		CF96519223A1241E00A6B97B /* FriendsListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListWorker.swift; sourceTree = "<group>"; };
+		CF96519323A1241E00A6B97B /* FriendsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListRouter.swift; sourceTree = "<group>"; };
+		CF96519423A1241E00A6B97B /* FriendsListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListModels.swift; sourceTree = "<group>"; };
+		CF96519523A1241E00A6B97B /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+		CF96519623A1241E00A6B97B /* FriendsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListInteractor.swift; sourceTree = "<group>"; };
+		CF96519F23A1243F00A6B97B /* FriendsListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendsListViewController.storyboard; sourceTree = "<group>"; };
+		CF9651A223A1277900A6B97B /* FriendsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListTableViewCell.swift; sourceTree = "<group>"; };
+		CF9651A723A12D7B00A6B97B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CF9651A923A12E3B00A6B97B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CF9651AC23A1308800A6B97B /* FriendsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsResponse.swift; sourceTree = "<group>"; };
+		CF9651AE23A131A100A6B97B /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +78,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF96518223A11F4A00A6B97B /* VKSdkFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF67136123A25B780087633F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CF96518623A120C400A6B97B /* AuthService.swift */,
+				CF9651A723A12D7B00A6B97B /* API.swift */,
+				CF9651A923A12E3B00A6B97B /* NetworkService.swift */,
+				CF9651AE23A131A100A6B97B /* NetworkDataFetcher.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		CF96516023A11D9A00A6B97B = {
 			isa = PBXGroup;
 			children = (
 				CF96516B23A11D9A00A6B97B /* FriendsListVK */,
 				CF96516A23A11D9A00A6B97B /* Products */,
+				CF96518023A11F4900A6B97B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +116,83 @@
 		CF96516B23A11D9A00A6B97B /* FriendsListVK */ = {
 			isa = PBXGroup;
 			children = (
+				CF9651A623A12D6400A6B97B /* Service */,
 				CF96516C23A11D9A00A6B97B /* AppDelegate.swift */,
-				CF96516E23A11D9A00A6B97B /* SceneDelegate.swift */,
-				CF96517023A11D9A00A6B97B /* ViewController.swift */,
-				CF96517223A11D9A00A6B97B /* Main.storyboard */,
+				CF96518B23A122F300A6B97B /* AuthVC */,
+				CF96519023A1240000A6B97B /* FriendsListVC */,
 				CF96517523A11D9E00A6B97B /* Assets.xcassets */,
 				CF96517723A11D9E00A6B97B /* LaunchScreen.storyboard */,
 				CF96517A23A11D9E00A6B97B /* Info.plist */,
+				CF96518823A1225E00A6B97B /* Helpers */,
 			);
 			path = FriendsListVK;
+			sourceTree = "<group>";
+		};
+		CF96518023A11F4900A6B97B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF96518123A11F4A00A6B97B /* VKSdkFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF96518823A1225E00A6B97B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CF96518923A1227200A6B97B /* UIViewController + Storyboard.swift */,
+				CF83D69C23A164A9000092DB /* WebImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CF96518B23A122F300A6B97B /* AuthVC */ = {
+			isa = PBXGroup;
+			children = (
+				CF96518C23A1230400A6B97B /* AuthViewController.swift */,
+				CF96518E23A1235100A6B97B /* AuthViewController.storyboard */,
+			);
+			path = AuthVC;
+			sourceTree = "<group>";
+		};
+		CF96519023A1240000A6B97B /* FriendsListVC */ = {
+			isa = PBXGroup;
+			children = (
+				CF9651A123A1270D00A6B97B /* Cell */,
+				CF96519F23A1243F00A6B97B /* FriendsListViewController.storyboard */,
+				CF96519523A1241E00A6B97B /* FriendsListViewController.swift */,
+				CF96519623A1241E00A6B97B /* FriendsListInteractor.swift */,
+				CF96519123A1241E00A6B97B /* FriendsListPresenter.swift */,
+				CF96519423A1241E00A6B97B /* FriendsListModels.swift */,
+				CF96519223A1241E00A6B97B /* FriendsListWorker.swift */,
+				CF96519323A1241E00A6B97B /* FriendsListRouter.swift */,
+			);
+			path = FriendsListVC;
+			sourceTree = "<group>";
+		};
+		CF9651A123A1270D00A6B97B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF9651A223A1277900A6B97B /* FriendsListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CF9651A623A12D6400A6B97B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CF9651AB23A1307D00A6B97B /* Model */,
+				CF67136123A25B780087633F /* Networking */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CF9651AB23A1307D00A6B97B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF9651AC23A1308800A6B97B /* FriendsResponse.swift */,
+				CF38C7DF23A23DBD00C1DD76 /* UserResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +205,8 @@
 				CF96516523A11D9A00A6B97B /* Sources */,
 				CF96516623A11D9A00A6B97B /* Frameworks */,
 				CF96516723A11D9A00A6B97B /* Resources */,
+				CF96518423A11F4A00A6B97B /* Embed Frameworks */,
+				CF96518523A11F6D00A6B97B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,36 +255,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9651A023A1243F00A6B97B /* FriendsListViewController.storyboard in Resources */,
 				CF96517923A11D9E00A6B97B /* LaunchScreen.storyboard in Resources */,
+				CF96518F23A1235100A6B97B /* AuthViewController.storyboard in Resources */,
 				CF96517623A11D9E00A6B97B /* Assets.xcassets in Resources */,
-				CF96517423A11D9A00A6B97B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF96518523A11F6D00A6B97B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/VKSdkFramework.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF96516523A11D9A00A6B97B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF96517123A11D9A00A6B97B /* ViewController.swift in Sources */,
+				CF96519823A1241E00A6B97B /* FriendsListPresenter.swift in Sources */,
+				CF96519923A1241E00A6B97B /* FriendsListWorker.swift in Sources */,
+				CF96519C23A1241E00A6B97B /* FriendsListViewController.swift in Sources */,
+				CF96519D23A1241E00A6B97B /* FriendsListInteractor.swift in Sources */,
+				CF96519A23A1241E00A6B97B /* FriendsListRouter.swift in Sources */,
+				CF96518723A120C400A6B97B /* AuthService.swift in Sources */,
+				CF96519B23A1241E00A6B97B /* FriendsListModels.swift in Sources */,
+				CF38C7E023A23DBD00C1DD76 /* UserResponse.swift in Sources */,
+				CF9651A323A1277900A6B97B /* FriendsListTableViewCell.swift in Sources */,
+				CF96518D23A1230400A6B97B /* AuthViewController.swift in Sources */,
+				CF83D69D23A164A9000092DB /* WebImageView.swift in Sources */,
+				CF9651AF23A131A100A6B97B /* NetworkDataFetcher.swift in Sources */,
 				CF96516D23A11D9A00A6B97B /* AppDelegate.swift in Sources */,
-				CF96516F23A11D9A00A6B97B /* SceneDelegate.swift in Sources */,
+				CF9651A823A12D7B00A6B97B /* API.swift in Sources */,
+				CF9651AD23A1308800A6B97B /* FriendsResponse.swift in Sources */,
+				CF9651AA23A12E3B00A6B97B /* NetworkService.swift in Sources */,
+				CF96518A23A1227200A6B97B /* UIViewController + Storyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CF96517223A11D9A00A6B97B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF96517323A11D9A00A6B97B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF96517723A11D9E00A6B97B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +444,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XDNPF5F49P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FriendsListVK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +467,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XDNPF5F49P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FriendsListVK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -23,7 +23,7 @@ struct NetworkDataFetcher: NetworkDataFetcherProtocol {
     }
     
     func getFriendsList(response: @escaping (FriendsResponse?) -> ()) {
-        let params = ["fields":"first_name, last_name, photo_50"]
+        let params = ["fields":"id, first_name, last_name, photo_50"]
         networking.request(path: API.getFriendsList, params: params) { (data, error) in
             if let error = error {
                 print("Error recieved requested data: \(error.localizedDescription)")

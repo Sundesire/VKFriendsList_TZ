@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct UserResponseWrapped: Decodable {
+    let response: [UserResponse]
+}
+
+struct UserResponse: Decodable {
+    let firstName: String
+    let lastName: String
+    let photo200: String?
+    let counters: Counters
+}
+
+struct Counters: Decodable {
+    let friends: Int
+}

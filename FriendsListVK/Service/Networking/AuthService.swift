@@ -68,12 +68,10 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
             } else if state == VKAuthorizationState.initialized {
                 print("VKAuthorizationState.initialized")
                 VKSdk.authorize(scope)
-                
             } else {
                 print("auth problem, state \(state), error \(String(describing: error))")
                 delegate?.authServiceDidSignInFail()
             }
         }
     }
-    
 }

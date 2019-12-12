@@ -13,9 +13,6 @@ protocol FriendsListRoutingLogic {
 }
 
 class FriendsListRouter: NSObject, FriendsListRoutingLogic {
-
-  weak var viewController: FriendsListViewController?
-  
-  // MARK: Routing
-  
+    
+    weak var viewController: FriendsListViewController?
 }

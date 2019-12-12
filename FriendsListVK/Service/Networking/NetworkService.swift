@@ -44,7 +44,6 @@ final class NetworkService: NetworkServiceProtocol {
         components.host = API.host
         components.path = path
         components.queryItems = params.map { URLQueryItem(name: $0, value: $1)}
-        print(components.url!)
         
         return components.url!
     }

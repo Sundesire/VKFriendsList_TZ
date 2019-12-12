@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import UIKit
+
+class AuthViewController: UIViewController {
+    
+    @IBOutlet weak var signInButton: UIButton!
+    private var authService: AuthService!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        signInButton.layer.cornerRadius = signInButton.frame.height / 2
+        authService = AppDelegate.shared().authService
+    }
+    @IBAction func signInButtonTapped(_ sender: UIButton) {
+        authService.wakeUpSession()
+    }
+}
